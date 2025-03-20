@@ -65,6 +65,7 @@ fun MainScreen() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        CustomizedTextArea("Hello There Click Me !")
         Text(
             text = "Hello World",
             color = Color.Red,
@@ -136,7 +137,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
     Compose101Theme {
